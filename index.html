@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator App</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Main container -->
+  <main class="app">
+    <h1 class="title">Calculator</h1>
+
+    <!-- Calculator card -->
+    <section class="calc" aria-label="Calculator">
+      <!-- Display area -->
+      <div class="display" role="status" aria-live="polite">
+        <!-- Previous expression line (optional UI) -->
+        <div id="prev" class="prev"> </div>
+
+        <!-- Current input/result -->
+        <div id="curr" class="curr">0</div>
+      </div>
+
+      <!-- Buttons grid -->
+      <div class="keys" aria-label="Calculator keys">
+        <!-- Row 1 -->
+        <button class="btn op" data-action="clear">AC</button>
+        <button class="btn op" data-action="delete">DEL</button>
+        <button class="btn op" data-action="percent">%</button>
+        <button class="btn op" data-value="/">÷</button>
+
+        <!-- Row 2 -->
+        <button class="btn" data-value="7">7</button>
+        <button class="btn" data-value="8">8</button>
+        <button class="btn" data-value="9">9</button>
+        <button class="btn op" data-value="*">×</button>
+
+        <!-- Row 3 -->
+        <button class="btn" data-value="4">4</button>
+        <button class="btn" data-value="5">5</button>
+        <button class="btn" data-value="6">6</button>
+        <button class="btn op" data-value="-">−</button>
+
+        <!-- Row 4 -->
+        <button class="btn" data-value="1">1</button>
+        <button class="btn" data-value="2">2</button>
+        <button class="btn" data-value="3">3</button>
+        <button class="btn op" data-value="+">+</button>
+
+        <!-- Row 5 -->
+        <button class="btn wide" data-action="sign">±</button>
+        <button class="btn" data-value="0">0</button>
+        <button class="btn" data-value=".">.</button>
+        <button class="btn eq" data-action="equals">=</button>
+      </div>
+
+      <p class="hint">
+        Keyboard: <b>0-9</b>, <b>+</b> <b>-</b> <b>*</b> <b>/</b>, <b>Enter</b>=, <b>Backspace</b> DEL, <b>Esc</b> AC
+      </p>
+    </section>
+  </main>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+</body>
+</html>
